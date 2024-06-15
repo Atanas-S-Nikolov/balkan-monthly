@@ -1,0 +1,21 @@
+.excel_file_upload {
+    background-color: var(--primary-color);
+    opacity: .9;
+    color: white;
+    padding: 1em;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.excel_file_upload:hover {
+    opacity: 1;
+}
+
+.upload_icon {
+    vertical-align: middle;
+    margin-right: .5rem;
+}
+
+#file_input {
+    display: none;
+}

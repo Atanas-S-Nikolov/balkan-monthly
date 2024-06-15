@@ -1,0 +1,25 @@
+.excel_file_preview {
+    display: grid;
+    place-items: center ;
+    margin-bottom: 2em;
+    cursor: pointer;
+}
+
+.img {
+    width: 600px;
+    max-width: 100%;
+}
+
+.download_icon {
+    position: absolute;
+    bottom: 50%;
+    display: none;
+}
+
+.img:hover {
+    opacity: .5;
+}
+
+.img:hover + .download_icon {
+    display: block;
+}

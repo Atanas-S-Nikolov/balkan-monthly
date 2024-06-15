@@ -1,0 +1,12 @@
+.error_section {
+    margin-bottom: 2em;
+    background-color: var(--error-bg-color);
+    color: var(--error-color);
+    padding: 1em;
+    border-radius: 5px;
+}
+
+.alert_icon {
+    vertical-align: middle;
+    margin-right: 1rem;
+}
