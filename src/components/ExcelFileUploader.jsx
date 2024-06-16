@@ -3,12 +3,16 @@ import styles from "../styles/ExcelFileUploader.module.css";
 import readXlsxFile, { readSheetNames } from "read-excel-file";
 
 import { Upload } from "preact-feather";
+import { useMediaQuery } from "../hooks/useMediaQuery";
 
 const SHEET_NAME = "месечно изравняване";
 const IMPORT = "import";
 const EXPORT = "export";
 
 export default function ExcelFileUploader({ beforeLoad, onError, onInput }) {
+  const isMobile = useMediaQuery("(max-width: 600px)");
+  const uploadIconSize = isMobile ? 16 : 24;
+
   function addProductStock(productsMap, number, stock, type) {
     if (number && stock) {
       if (productsMap.has(number)) {
@@ -133,7 +137,7 @@ export default function ExcelFileUploader({ beforeLoad, onError, onInput }) {
   return (
     <>
       <label class={styles.excel_file_upload} htmlFor={styles.file_input}>
-        <Upload class={styles.upload_icon} /> Качи Excel файл
+        <Upload class={styles.upload_icon} size={uploadIconSize}/> Качи Excel файл
       </label>
       <input
         id={styles.file_input}

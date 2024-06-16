@@ -10,3 +10,10 @@
     vertical-align: middle;
     margin-right: 1rem;
 }
+
+@media (max-width: 450px) {
+    .error_section {
+        padding: .75em;
+    }
+}
+

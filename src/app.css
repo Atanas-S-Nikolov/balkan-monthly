@@ -7,3 +7,19 @@
   text-align: center;
   font-size: large;
 }
+
+body {
+  margin: 0;
+}
+
+@media (max-width: 800px) {
+  #app {
+    font-size: medium;
+  }
+}
+
+@media (max-width: 600px) {
+  #app {
+    font-size: small;
+  }
+}

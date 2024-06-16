@@ -19,3 +19,10 @@
 #file_input {
     display: none;
 }
+
+@media (max-width: 450px) {
+    .excel_file_upload {
+        padding: .75em;
+        text-wrap: nowrap;
+    }
+}
